@@ -17,30 +17,30 @@ Run the below scripts to generate nighttime light and AQI data. Install required
 
 This script is used to calculate the daily nighttime light radiances for the entire target region. Change following variables accordingly.
 
-    1. data\_infolder– root directory for input files
-    2. utput\_dir – root directory for output files
+    1. data_infolder– root directory for input files
+    2. output_dir – root directory for output files
     3. alldate – study period
 
-1. dnb-monthly-VNP.py
+2. dnb-monthly-VNP.py
 
 This script is used to calculate the monthly mean of nighttime light over the target region. Change the following variables accordingly.
 
-    1. input\_dir – root directory for input files
-    2. utput\_dir – root directory for output files
+    1. input_dir – root directory for input files
+    2. output_dir – root directory for output files
     3. alldate – study period
 
-1. dnb-difference-VNP.py
+3. dnb-difference-VNP.py
 
 This script is used to calculate the difference of nighttime light between different months. Change the following variables accordingly.
 
-    1. input\_dir – root directory for input files
-    2. utput\_dir – root directory for output files
+    1. input_dir – root directory for input files
+    2. output_dir – root directory for output files
     3. region – study area
-    4. pre\_nc\_filename – monthly mean of nighttime light in China during former month
-    5. post\_nc\_filename – monthly mean of nighttime light in China during latter month
+    4. pre_nc_filename – monthly mean of nighttime light in China during former month
+    5. post_nc_filename – monthly mean of nighttime light in China during latter month
 
 **Results**
 
 1. NTL-2019.xlsx contains the monthly mean of nighttime light in all the provinces of mainland China in 2019.
-2. Nighttime\_light\_data.xlsx contains monthly mean nighttime light of provinces and entire country of China.
-3. AQI\_data.xlsx contains daily and monthly mean of AQI in provinces and entire country of China
+2. Nighttime_light_data.xlsx contains monthly mean nighttime light of provinces and entire country of China.
+3. AQI_data.xlsx contains daily and monthly mean of AQI in provinces and entire country of China
