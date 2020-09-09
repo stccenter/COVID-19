@@ -53,11 +53,10 @@ def extract_h4_by_name(filename,dsname):
 # -----------------------------------------------------------------------------
 if __name__ == '__main__':
 
+#To calculate difference between two time periods
     period1 = 'peri-peri-hist'
     period2 = 'post-post-hist'
-    #path = '/home/qliu6/trmm/1998_2017_merge/results/OMI/'
-    #name1 = 'OMI-NO2-'+period1+'.nc4'
-    #name2 = 'OMI-NO2-'+period2+'.nc4'
+
 
     path = '/home/qliu6/trmm/1998_2017_merge/results/OMI/'
     name1 = 'difference_'+period1+'.nc4'
@@ -101,6 +100,7 @@ if __name__ == '__main__':
     exit()
 
 
+#To calculate periodic mean
 
     period = 'post'
     infolder='/storage/qliu6/OMI/'+period+'/'
@@ -116,9 +116,6 @@ if __name__ == '__main__':
         theQV2M[idx_invalid] = np.nan
         theQV2M = np.array(theQV2M)
         theQV2M = theQV2M/math.pow(10,15)
-        #lats = extract_h4_by_name(the_filename, '/HDFEOS/GRIDS/lat')
-        #lons = extract_h4_by_name(the_filename, '/HDFEOS/GRIDS/lon')
-
         min_lon = -180.0
         max_lon = 180.0
         max_lat = -90.0
@@ -127,7 +124,7 @@ if __name__ == '__main__':
         n_lat = 720
         x = np.linspace(min_lon, max_lon, n_lon)
         y = np.linspace(max_lat, min_lat, n_lat)
-        #lon_grid, lat_grid = np.meshgrid(x, y)
+
 
         #print (theQV2M.shape,x.shape)
         all_NO2.append(theQV2M)
