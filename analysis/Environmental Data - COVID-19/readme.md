@@ -43,16 +43,16 @@ Find mean value statistics corresponding with regions below
  
 Find global Distribution maps below
 1. Nighttime light radiance - https://covid19datagmu.s3.us-east-2.amazonaws.com/NightTImeLight/NightTimeLight.zip
-2. Precipitation
+2. Precipitation<br/>
 	https://covid19datagmu.s3.us-east-2.amazonaws.com/precipitation/daily/daily_precipitation_JAN_2020.zip<br/>
 	https://covid19datagmu.s3.us-east-2.amazonaws.com/precipitation/daily/daily_precipitation_FEB_2020.zip<br/>
 	https://covid19datagmu.s3.us-east-2.amazonaws.com/precipitation/daily/daily_precipitation_MAR_2020.zip<br/>
 	https://covid19datagmu.s3.us-east-2.amazonaws.com/precipitation/daily/daily_precipitation_APR_2020.zip
-3. Temperature
+3. Temperature<br/>
 	https://covid19datagmu.s3.us-east-2.amazonaws.com/temperature_humidity/daily/Temperature/daily_MEAN_TEMP_JAN_2020.zip<br/>
 	https://covid19datagmu.s3.us-east-2.amazonaws.com/temperature_humidity/daily/Temperature/daily_MEAN_TEMP_FEB_2020.zip<br/>
 	https://covid19datagmu.s3.us-east-2.amazonaws.com/temperature_humidity/daily/Temperature/daily_MEAN_TEMP_MAR_2020.zip
-4. Humidity
+4. Humidity<br/>
 	https://covid19datagmu.s3.us-east-2.amazonaws.com/temperature_humidity/daily/+humidity/daily_MEAN_JAN_2020.zip<br/>
 	https://covid19datagmu.s3.us-east-2.amazonaws.com/temperature_humidity/daily/+humidity/daily_MEAN_FEB_2020.zip<br/>
 	https://covid19datagmu.s3.us-east-2.amazonaws.com/temperature_humidity/daily/+humidity/daily_MEAN_MAR_2020.zip
