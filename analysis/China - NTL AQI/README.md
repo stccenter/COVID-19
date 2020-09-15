@@ -3,6 +3,17 @@
 1. Python IDE
 2. Microsoft Excel
 
+**How to set up the python environment and install packages?**
+
+1. Create a new python project with environment as conda. 
+2. Download python files (*.py) and requirements.txt file from repository and place it in under python project.
+3. Execute below comments in terminal to install required python packages:
+            a.	conda install -c conda-forge  hdf4
+            b.	conda install -c conda-forge  pandas
+            c.	conda install -c conda-forge  basemap
+            d.	conda install -c conda-forge pyhdf
+            e.	pip install -r requirements.txt
+
 **Where to download the data?**
 
 Nighttime light: [https://ladsweb.modaps.eosdis.nasa.gov/search/order/3/VNP46A1--5000/2020-02-01..2020-04-03/DB/World](https://ladsweb.modaps.eosdis.nasa.gov/search/order/3/VNP46A1--5000/2020-02-01..2020-04-03/DB/World)
