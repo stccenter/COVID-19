@@ -7,12 +7,12 @@
 
 1. Create a new python project with environment as conda. 
 2. Download python files (*.py) and requirements.txt file from repository and place it in under python project.
-3. Execute below comments in terminal to install required python packages:
-            a.	conda install -c conda-forge  hdf4
-            b.	conda install -c conda-forge  pandas
-            c.	conda install -c conda-forge  basemap
-            d.	conda install -c conda-forge pyhdf
-            e.	pip install -r requirements.txt
+3. Execute below comments in terminal to install required python packages:<br/>
+            1. conda install -c conda-forge  hdf4<br/>
+            2. conda install -c conda-forge  pandas<br/>
+            3. conda install -c conda-forge  basemap<br/>
+            4. conda install -c conda-forge pyhdf<br/>
+            5. pip install -r requirements.txt<br/>
 
 **Where to download the data?**
 
