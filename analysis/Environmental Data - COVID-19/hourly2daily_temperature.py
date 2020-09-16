@@ -1,25 +1,8 @@
 import glob, os,sys
-import math
-import scipy.interpolate
-import scipy.ndimage
 import numpy as np
-import matplotlib as mpl
-import scipy.stats as stats
-import matplotlib.mlab as mlab
 import h5py
 from scipy.io import netcdf
-from scipy.stats import lognorm
-from scipy.stats import gamma
-from scipy.stats import chisquare
-#from compiler.ast import flatten
-from sklearn import datasets, linear_model
-from sklearn.linear_model import LinearRegression
-from scipy.stats import norm
 from netCDF4 import Dataset
-import pandas as pd
-from sklearn.decomposition import PCA
-from pandas import DataFrame
-import matplotlib.pyplot as plt
 
 
 def get_files(dir,ext):
