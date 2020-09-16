@@ -1,6 +1,15 @@
 **What are the software requirements?**
 
 1. Python IDE
+2. Anaconda 3
+
+**How to set up the python environment and install packages?**
+
+1. Create a new python project with environment as conda.
+![Conda Project](https://github.com/stccenter/COVID-19/blob/master/analysis/CA%20-%20Air%20Pollution/conda.png)
+2. Download all python files (*.py) and requirements.txt file from repository and place it in python project.
+3. Execute below comment to install required python packages.
+	pip install -r requirements.txt
 
 **Where to download the data?**
 
