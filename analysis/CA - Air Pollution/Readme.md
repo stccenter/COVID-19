@@ -35,4 +35,5 @@ Results:
 1. california_counties_covid_env_data.xlsx contains daily average concentration for each pollutant. Seven-day moving average and standard error are calculated in using excel.
 
 **Tutorial Video**
-[Link to the video](https://www.youtube.com/watch?v=hwQF3_ZJSJY)
+
+[<img src="https://github.com/stccenter/COVID-19/blob/master/analysis/CA%20-%20Air%20Pollution/Screenshot%20for%20video.png" width="60%">](https://www.youtube.com/watch?v=hwQF3_ZJSJY)
