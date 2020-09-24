@@ -34,58 +34,60 @@ def extract_h4_by_name(filename,dsname):
 # -----------------------------------------------------------------------------
 if __name__ == '__main__':
 
-#To calculate difference between two time periods
-    period1 = 'peri-peri-hist'
-    period2 = 'post-post-hist'
+# #To calculate difference between two time periods
+
+    def dif():
+        period1 = 'pre'
+        period2 = 'post'
 
 
-    path = '/home/qliu6/trmm/1998_2017_merge/results/OMI/'
-    name1 = 'difference_'+period1+'.nc4'
-    name2 = 'difference_'+period2+'.nc4'
-    figure1 = path + name1
-    figure2 = path + name2
-    NO2_1 = np.array(extract_h4_by_name(figure1, period1+'_Tro_NO2'))
-    NO2_2 = np.array(extract_h4_by_name(figure2, period2+'_Tro_NO2'))
-    lon = np.array(extract_h4_by_name(figure1, 'nlon'))
-    lat = np.array(extract_h4_by_name(figure1, 'nlat'))
-    difference = NO2_2 - NO2_1
-    #ratio = difference/NO2_1
+        path = 'D:/mason/OneDrive - George Mason University/Work/github/test/result/'
+        name1 = 'OMI-NO2-'+period1+'.nc4'
+        name2 = 'OMI-NO2-'+period2+'.nc4'
+        figure1 = path + name1
+        figure2 = path + name2
+        NO2_1 = np.array(extract_h4_by_name(figure1, period1+'_Tro_NO2'))
+        NO2_2 = np.array(extract_h4_by_name(figure2, period2+'_Tro_NO2'))
+        lon = np.array(extract_h4_by_name(figure1, 'nlon'))
+        lat = np.array(extract_h4_by_name(figure1, 'nlat'))
+        difference = NO2_2 - NO2_1
+        #ratio = difference/NO2_1
 
-    outfile = path + 'anomaly_' + period2+'-'+period1 + '.nc4'
-    # create nc file
-    fid = netcdf.netcdf_file(outfile, 'w')
-    # create dimension variable, so we can use it in the netcdf
-    fid.createDimension('longitude', lon.shape[0])
-    fid.createDimension('latitude', lat.shape[0])
+        outfile = path + 'anomaly_' + period2+'-'+period1 + '.nc4'
+        # create nc file
+        fid = netcdf.netcdf_file(outfile, 'w')
+        # create dimension variable, so we can use it in the netcdf
+        fid.createDimension('longitude', lon.shape[0])
+        fid.createDimension('latitude', lat.shape[0])
 
-    nc_var = fid.createVariable('nlat', 'f4', ('latitude',))
-    nc_var[:] = lat
-    nc_var.long_name = 'latitude'
-    nc_var.standard_name = 'latitude'
-    nc_var.units = 'degrees_north'
+        nc_var = fid.createVariable('nlat', 'f4', ('latitude',))
+        nc_var[:] = lat
+        nc_var.long_name = 'latitude'
+        nc_var.standard_name = 'latitude'
+        nc_var.units = 'degrees_north'
 
-    nc_var = fid.createVariable('nlon', 'f4', ('longitude',))
-    nc_var[:] = lon
-    nc_var.long_name = 'longitude'
-    nc_var.standard_name = 'longitude'
-    nc_var.units = 'degrees_east'
+        nc_var = fid.createVariable('nlon', 'f4', ('longitude',))
+        nc_var[:] = lon
+        nc_var.long_name = 'longitude'
+        nc_var.standard_name = 'longitude'
+        nc_var.units = 'degrees_east'
 
-    nc_var = fid.createVariable('NO2 anomaly', 'f4', ('latitude', 'longitude',))
-    nc_var[:] = difference
-    nc_var.long_name = "NO2 difference between "+period2+" and "+period1
-    nc_var.units = "10**15 molec/cm2"
+        nc_var = fid.createVariable('NO2 anomaly', 'f4', ('latitude', 'longitude',))
+        nc_var[:] = difference
+        nc_var.long_name = "NO2 difference between "+period2+" and "+period1
+        nc_var.units = "10**15 molec/cm2"
 
-    fid.close()
+        fid.close()
 
-    print ('finish ...')
-    exit()
+        print ('finish ...')
+        exit()
 
 
 #To calculate periodic mean
-
-    period = 'post'
-    infolder='/storage/qliu6/OMI/'+period+'/'
-    output_dir='/home/qliu6/trmm/1998_2017_merge/results/OMI/'
+def mean(period):
+    #period = 'pre'
+    infolder='D:/mason/OneDrive - George Mason University/Work/github/test/'+period+'/'
+    output_dir='D:/mason/OneDrive - George Mason University/Work/github/test/result/'
     all_nc_files, n_all=get_files(infolder,'*.he5')
     all_nc_files=np.sort(all_nc_files)
 
@@ -138,12 +140,12 @@ if __name__ == '__main__':
     nc_var.long_name = "average tropospheric NO2"
     nc_var.units = "10**15 molec/cm2"
 
-
     fid.close()
-
-
     print ('finish ...')
 
 
 
 
+mean("post")
+mean("pre")
+dif()
