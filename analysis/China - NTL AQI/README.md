@@ -59,4 +59,4 @@ This script is used to calculate the difference of nighttime light between diffe
 3. AQI_data.xlsx contains daily and monthly mean of AQI in provinces and entire country of China
 
 **Tutorial Video**
-[<img src="https://github.com/stccenter/COVID-19/blob/master/analysis/CA%20-%20Air%20Pollution/Screenshot%20for%20video.png" width="60%">](https://www.youtube.com/watch?v=pWMRpG_2-Fs&t=7s)
+[<img src="https://github.com/stccenter/COVID-19/blob/master/analysis/China%20-%20NTL%20AQI/Youtube%20screenshot.png" width="60%">](https://www.youtube.com/watch?v=pWMRpG_2-Fs&t=7s)
