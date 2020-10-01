@@ -6,7 +6,7 @@
 
 **How to set up the python environment and install packages?**
 
-1. Create a new python project with environment as conda. 
+1. Create a new python project with environment as conda.
 ![Conda Project](https://github.com/stccenter/COVID-19/blob/master/analysis/China%20-%20NTL%20AQI/conda.png)
 2. Download python files (*.py) and requirements.txt file from repository and place it in under python project.
 3. Execute below comments in terminal to install required python packages:<br/>
@@ -57,3 +57,6 @@ This script is used to calculate the difference of nighttime light between diffe
 1. NTL-2019.xlsx contains the monthly mean of nighttime light in all the provinces of mainland China in 2019.
 2. Nighttime_light_data.xlsx contains monthly mean nighttime light of provinces and entire country of China.
 3. AQI_data.xlsx contains daily and monthly mean of AQI in provinces and entire country of China
+
+**Tutorial Video**
+[<img src="https://github.com/stccenter/COVID-19/blob/master/analysis/CA%20-%20Air%20Pollution/Screenshot%20for%20video.png" width="60%">](https://www.youtube.com/watch?v=pWMRpG_2-Fs&t=7s)
