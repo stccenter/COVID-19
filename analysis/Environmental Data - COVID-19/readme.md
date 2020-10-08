@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-09-24 15:17:10
- * @LastEditTime: 2020-10-08 16:16:58
+ * @LastEditTime: 2020-10-08 16:18:58
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \Environmental Data - COVID-19\readme.md
@@ -75,4 +75,4 @@ Find global Distribution maps below
 	https://covid19datagmu.s3.us-east-2.amazonaws.com/temperature_humidity/daily/+humidity/daily_MEAN_MAR_2020.zip
 
 ## Tutorial Video
-[<img src="https://github.com/stccenter/COVID-19/blob/master/analysis/China%20-%20NTL%20AQI/Youtube%20screenshot.png" width="60%">](https://youtu.be/Y_a-hs5n0oo)
+[<img src="https://github.com/stccenter/COVID-19/blob/master/analysis/Environmental%20Data%20-%20COVID-19/youtube%20screen%20shot.png" width="60%">](https://youtu.be/Y_a-hs5n0oo)
