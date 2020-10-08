@@ -1,9 +1,17 @@
-**What are the software requirements?**
+<!--
+ * @Author: your name
+ * @Date: 2020-09-24 15:17:10
+ * @LastEditTime: 2020-10-08 16:16:58
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \Environmental Data - COVID-19\readme.md
+-->
+## What are the software requirements?
 
 1. Python IDE
 2. Anaconda 3
 
-**How to set up the python environment and install packages?**
+## How to set up the python environment and install packages?
 
 1. Create a new python project with environment as conda.
 ![Conda Project](https://github.com/stccenter/COVID-19/blob/master/analysis/CA%20-%20Air%20Pollution/conda.png)
@@ -11,7 +19,7 @@
 3. Execute below comment to install required python packages.<br/>
 	pip install -r requirements.txt
 
-**Where to download the data?**
+## Where to download the data?
 
 1. For temperature, humidity, environmental condition – https://disc.gsfc.nasa.gov/datasets/M2T1NXSLV_5.12.4/summary?keywords=MERRA2_400.tavg1_2d_slv_Nx
 2. For precipitation rate - https://disc.gsfc.nasa.gov/datasets/GPM_3IMERGHHE_06/summary?keywords=IMERG
@@ -19,7 +27,7 @@
 4. For concentration of air pollutants - https://disc.gsfc.nasa.gov/datasets/OMNO2d_003/summary?keywords=omi
 5. For air quality index, air pollution concentration - http://data.cma.cn/
 
-**How to get the results?**
+## How to get the results?**
 
 1. Run script hourly2daily_humidity.py to convert hourly humidity data to daily. Change below variables accordingly.
 
@@ -41,7 +49,7 @@
 
         output_dir – root directory for output files
 
-**Results** :
+## Results:
 Find mean value statistics corresponding with regions below
 1. Nighttime light radiance - https://github.com/stccenter/COVID-19/tree/master/analysis/nightlight
 2. Air Quality - https://github.com/stccenter/COVID-19/tree/master/analysis/nightlight 
@@ -65,3 +73,6 @@ Find global Distribution maps below
 	https://covid19datagmu.s3.us-east-2.amazonaws.com/temperature_humidity/daily/+humidity/daily_MEAN_JAN_2020.zip<br/>
 	https://covid19datagmu.s3.us-east-2.amazonaws.com/temperature_humidity/daily/+humidity/daily_MEAN_FEB_2020.zip<br/>
 	https://covid19datagmu.s3.us-east-2.amazonaws.com/temperature_humidity/daily/+humidity/daily_MEAN_MAR_2020.zip
+
+## Tutorial Video
+[<img src="https://github.com/stccenter/COVID-19/blob/master/analysis/China%20-%20NTL%20AQI/Youtube%20screenshot.png" width="60%">](https://youtu.be/Y_a-hs5n0oo)
