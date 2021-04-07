@@ -151,7 +151,7 @@ if __name__ == "__main__":
     results = r'/Users/sivanuhappy/Documents/George Mason University/COVID-19 Research Project/Daily mean/Results'
     tempDir = r'/Users/sivanuhappy/Documents/George Mason University/COVID-19 Research Project/Daily mean/Results/temp.tif'
     rastername = 'Tro_NO2'
-    exportStatisticToCSV(globalShapeFile, inputRasterDir, 0.25, 0.5, rastername, 'nlon', 'nlat', 'GID_2', rastername,
+    exportStatisticToCSV(globalShapeFile, inputRasterDir, 0.25, 0.25, rastername, 'nlon', 'nlat', 'GID_2', rastername,
                          savedirs, '2D', tempDir)
 
     print('Finish')
