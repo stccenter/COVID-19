@@ -35,6 +35,7 @@ Run the script OMI_statitic_ca.py to calculate periodical (pre, peri, and post) 
 1. california_counties_covid_env_data.xlsx contains daily average concentration for each pollutant. Seven-day moving average and standard error are calculated in using excel.
 
 **Author**
+
 Qian Liu
 Email: qliu6@gmu..edu
 
