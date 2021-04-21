@@ -1,8 +1,9 @@
 **What are the software requirements?**
 
 1. Python IDE
-2. Anaconda 3
-3. Microsoft Excel
+2. Python 2.7 or above
+3. Anaconda 3
+4. Microsoft Excel
 
 **How to set up the python environment and install packages?**
 1. Create a new python project with environment as conda
