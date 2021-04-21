@@ -37,7 +37,7 @@ Run the script OMI_statitic_ca.py to calculate periodical (pre, peri, and post) 
 **Author**
 
 Qian Liu<br>
-Email: qliu6@gmu..edu
+Email: qliu6@gmu.edu
 
 
 **Tutorial Video**
