@@ -1,6 +1,9 @@
+**Research objective**
+
+
 **What are the software requirements?**
 
-1. Python IDE
+1. Python IDE (Visual Studio Code, Pycharm, or anything of your choice)
 2. Python 2.7 or above
 3. Anaconda 3
 4. Microsoft Excel
