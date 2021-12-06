@@ -8,18 +8,32 @@
 3. Anaconda 3
 4. Microsoft Excel
 
-**Where to download the data?**
+* Step 1: Download the satellite NO2 observations data using the link:
 
-Ground-based observations of air pollutants: https://www.epa.gov/outdoor-air-quality-data/download-daily-data
+* Step 2: Download this GitHub repository using the link. Unzip the extracted folder. It has below files:
+    1. OMI_
+    2. requirements.txt
+    3. 
 
-Satellite NO2 observations: [https://disc.gsfc.nasa.gov/datasets/OMNO2d_003/summary](https://disc.gsfc.nasa.gov/datasets/OMNO2d_003/summary)
+* Step 3: Go to the terminal. 
 
-National highways: https://catalog.data.gov/dataset/tiger-line-shapefile-2016-nation-u-s-primary-roads-national-shapefile
+* Step 4: Create a new conda environment.
+
+**For Windows and Mac**
+```
+conda create -n env-analysis-no2
+```
+
+* Step 5: Activate the conda environment.
+
+**For Windows and Mac**
+```
+conda activate env-analysis-no2
+```
+
+* Install python packages
 
 
-**How to set up the python environment and install packages?**
-1. Create a new python project with environment as conda
-![Conda Project](https://github.com/stccenter/COVID-19/blob/master/analysis/CA%20-%20Air%20Pollution/Screenshots/conda.png)
 2. Download python file (OMI_static_ca.py) and requirements.txt file from repository and place it in python project.
 3. Execute below comment to install required python packages.<br/>
     pip install -r requirements.txt
@@ -38,6 +52,15 @@ Run the script OMI_statitic_ca.py to calculate periodical (pre, peri, and post) 
 **Results**
 
 1. california_counties_covid_env_data.xlsx contains daily average concentration for each pollutant. Seven-day moving average and standard error are calculated in using excel.
+
+* Useful links
+
+1. Ground-based observations of air pollutants: https://www.epa.gov/outdoor-air-quality-data/download-daily-data
+
+2. Satellite NO2 observations: [https://disc.gsfc.nasa.gov/datasets/OMNO2d_003/summary](https://disc.gsfc.nasa.gov/datasets/OMNO2d_003/summary)
+
+3. National highways: https://catalog.data.gov/dataset/tiger-line-shapefile-2016-nation-u-s-primary-roads-national-shapefile
+
 
 **Author**
 
