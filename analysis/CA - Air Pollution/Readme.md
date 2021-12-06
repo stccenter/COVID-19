@@ -8,13 +8,6 @@
 3. Anaconda 3
 4. Microsoft Excel
 
-**How to set up the python environment and install packages?**
-1. Create a new python project with environment as conda
-![Conda Project](https://github.com/stccenter/COVID-19/blob/master/analysis/CA%20-%20Air%20Pollution/Screenshots/conda.png)
-2. Download python file (OMI_static_ca.py) and requirements.txt file from repository and place it in python project.
-3. Execute below comment to install required python packages.<br/>
-    pip install -r requirements.txt
-
 **Where to download the data?**
 
 Ground-based observations of air pollutants: https://www.epa.gov/outdoor-air-quality-data/download-daily-data
@@ -22,6 +15,14 @@ Ground-based observations of air pollutants: https://www.epa.gov/outdoor-air-qua
 Satellite NO2 observations: [https://disc.gsfc.nasa.gov/datasets/OMNO2d_003/summary](https://disc.gsfc.nasa.gov/datasets/OMNO2d_003/summary)
 
 National highways: https://catalog.data.gov/dataset/tiger-line-shapefile-2016-nation-u-s-primary-roads-national-shapefile
+
+
+**How to set up the python environment and install packages?**
+1. Create a new python project with environment as conda
+![Conda Project](https://github.com/stccenter/COVID-19/blob/master/analysis/CA%20-%20Air%20Pollution/Screenshots/conda.png)
+2. Download python file (OMI_static_ca.py) and requirements.txt file from repository and place it in python project.
+3. Execute below comment to install required python packages.<br/>
+    pip install -r requirements.txt
 
 **How to get the results?**
 
