@@ -1,20 +1,20 @@
-**Research objective**
+## **Research Background**
 
+The mitigation policies or lockdown measures imposed by local and national gov-ernments to control the spread of COVID-19 have created drastic changes in people's livelihood, economy, and environment. We investigated the impacts of the COVID-19 crisis on the atmospheric environment by comprehensively understanding the spatio-temporal patterns of air pollutants in California, USA. The investigation results provided knowledge about humans and environmental re-sponses to the pandemic.
 
 **What are the software requirements?**
 
 1. Python IDE (Visual Studio Code, Pycharm, or anything of your choice)
 2. Python 2.7 or above
 3. Anaconda 3
-4. Microsoft Excel
 
-* Step 1: Download the satellite NO2 observations data using the link:
+* Step 1: Download the project related materials using the link:
 
-* Step 2: Download this GitHub repository using the link. Unzip the extracted folder. It has below files:
-    1. OMI_
-    2. requirements.txt
-    3. 
 
+* Step 2: The downloaded folder has below folder:
+    1. Air Pollutants Data - This folder has satellite NO2 observations data that is splitted into three periods - pre, peri, and post
+    2. Air Quality Analytical Tool
+   
 * Step 3: Go to the terminal. 
 
 * Step 4: Create a new conda environment.
@@ -34,8 +34,8 @@ conda activate env-analysis-no2
 * Install python packages
 
 
-2. Download python file (OMI_static_ca.py) and requirements.txt file from repository and place it in python project.
-3. Execute below comment to install required python packages.<br/>
+1. Download python file (OMI_static_ca.py) and requirements.txt file from repository and place it in python project.
+2. Execute below comment to install required python packages.<br/>
     pip install -r requirements.txt
 
 **How to get the results?**
