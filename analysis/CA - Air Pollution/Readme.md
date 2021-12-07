@@ -2,14 +2,15 @@
 
 The mitigation policies or lockdown measures imposed by local and national gov-ernments to control the spread of COVID-19 have created drastic changes in people's livelihood, economy, and environment. We investigated the impacts of the COVID-19 crisis on the atmospheric environment by comprehensively understanding the spatio-temporal patterns of air pollutants in California, USA. The investigation results provided knowledge about humans and environmental re-sponses to the pandemic.
 
-**What are the software requirements?**
+**Prerequisite**
 
 1. Python IDE (Visual Studio Code, Pycharm, or anything of your choice)
 2. Python 2.7 or above
 3. Anaconda 3
 
-* Step 1: Download the project related materials using the link:
+**Steps**
 
+* Step 1: Download the project related materials using the link:
 
 * Step 2: The downloaded folder has below folder:
     1. Air Pollutants Data - This folder has satellite NO2 observations data that is splitted into three periods - pre, peri, and post
