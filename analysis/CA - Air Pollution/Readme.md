@@ -10,7 +10,7 @@ The mitigation policies or lockdown measures imposed by local and national gov-e
 
 **Steps**
 
-* Step 1: Create a new folder and name it as per your preference. For example, let's say CA-Air Pollution
+* Step 1: Create a new folder and name it as per your preference. For example, let's say CA_Air_Pollution
 
 * Step 2: Download the project related materials using the link. The downloaded folder has below folders and files:
   
@@ -18,7 +18,7 @@ The mitigation policies or lockdown measures imposed by local and national gov-e
     2. Air Quality Analytical Tool - This folder has 
 
 
-* Step 3: Open the command prompt/terminal in your system. Navigate to your project folder CA-Air Pollution
+* Step 3: Open the command prompt/terminal in your system. Navigate to your project folder CA_Air_Pollution
   
   ```
   cd CA-Air Pollution
@@ -96,7 +96,7 @@ The mitigation policies or lockdown measures imposed by local and national gov-e
    
    ![Caption: GEOPANDAS PIP](Screenshots/Geopandas-PIP.jpg)
 
-   6. Install matplotlib and basemap packages using
+   1. Install matplotlib, basemap, and basemap-data-hires packages using
    
    ```
    conda install matplotlib
@@ -106,14 +106,44 @@ The mitigation policies or lockdown measures imposed by local and national gov-e
    conda install -c conda-forge basemap
    ```
 
-* Step 7: Run the script OMI_statitic_ca.py to calculate periodical (pre, peri, and post) means of 2020 and 2015-2019, and their differences. Change the below variables accordingly.
+   ```
+   conda install -c conda-forge basemap-data-hires
+   ```
 
-1. period – either pre, peri, or post
-2. infolder – root directory for input files
-3. output_dir – root directory for output files
-4. period1 – former period
-5. period2 – latter period
-6. path – root directory for input files
+* Step 7: The cript OMI_statitic_ca.py calculates:
+    1. periodical (pre, peri, and post) means of 2020 and 2015-2019
+    2. anomalies of each period in 2015-2019 and 2020 
+    3. differences between periods.
+   
+   1. First, calculate the means of pre, peri, and post periods in 2015-2019 and 2020. Run the script using below command:
+   
+    ```
+    python OMI_Static_CA.py -t mean
+    ```
+
+    ![Caption: Mean-Output](Screenshots/Mean-Output.jpg)
+
+
+    ## Sample output
+    ![Caption: OMI Mean of 2015-2019](Screenshots/OMI-NO2-pre-2020.png)
+
+    **Note**: After the script finished running, you can see Results folder inside the project folder. Inside the Results folder you can see the mean values of periods in NC4 file format. Additionally, you can see Images folder inside Results folder. Inside Images folder, you will see PNG files.
+
+    2. Second, calculate the anomalies of mean values of 2015-2019 and 2020 for each period. Run the script three times. On each time specify the three periods: pre, peri, and post. Screenshot below.
+   
+    ```
+    python OMI_Static_CA.py -t anomaly
+    ```
+   
+    ![Caption: Anomaly-Output](Screenshots/Anomaly-Output.png)
+
+    3. Third, calculate the differences between periods.
+
+    ```
+    python OMI_Static_CA.py -t difference
+    ```
+
+    ![Caption: Difference-Output](Screenshots/Difference-Output.jpg)
 
 **Results**
 
