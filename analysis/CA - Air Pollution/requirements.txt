@@ -2,3 +2,4 @@ scipy
 netCDF4
 numpy
 h5py
+matplotlib
