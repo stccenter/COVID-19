@@ -53,25 +53,60 @@ The mitigation policies or lockdown measures imposed by local and national gov-e
     pip install -r requirements.txt
     ```
 
-   2. Next, install gdal, fiona, and geopandas. 
+   2. Next, install gdal, fiona, and geopandas. To successfully install these packages, first install GDAL, second install fiona, and last install geopandas.
    
       1. Using this [link](https://www.lfd.uci.edu/~gohlke/pythonlibs/), download GDAL‑3.3.3‑cp38‑cp38‑win_amd64.whl, Fiona‑1.8.20‑cp38‑cp38‑win_amd64.whl, and 
          geopandas-0.10.2-py2.py3-none-any.whl files.
    
-   ![Caption: GDAL WHL version](Screenshots/GDAL-WHL.png)
+   # GDAL WHL screenshot
 
+   ![Caption: GDAL WHL version](Screenshots/GDAL-WHL.png) 
+
+   # Fiona WHL screenshot
+   
    ![Caption: Fiona WHL version](Screenshots/Fiona-WHL.png)
+
+   # Geopandas WHL screenshot
 
    ![Caption: Geopandas WHL version](Screenshots/Geopandas-WHL.png)
 
-   3. In terminal, install the packages using pip. For example to install GDAL
+
+   3. In terminal, install the packages using pip. For example to install GDAL, type
    
-   ![Caption: GDAL WHL version](Screenshots/GDAL-PIP.png)
+    ```
+    pip install [path_where_you_download_GDAL_WHL_FILE]
+    ```
+   
+   ![Caption: GDAL PIP](Screenshots/GDAL-PIP.jpg)
+
+   4. Similarly, install fiona package.
+   
+   ```
+   pip install [path_where_you_download_FIONA_WHL_FILE]
+   ```
+   
+   ![Caption: FIONA PIP](Screenshots/Fiona-PIP.jpg)
 
 
-* Step 7: Run the script
+   5. Finally, install geopandas package.
 
-Run the script OMI_statitic_ca.py to calculate periodical (pre, peri, and post) means of 2020 and 2015-2019, and their differences. Change the below variables accordingly.
+   ```
+   pip install [path_where_you_download_GEOPANDAS_WHL_FILE]
+   ```
+   
+   ![Caption: GEOPANDAS PIP](Screenshots/Geopandas-PIP.jpg)
+
+   6. Install matplotlib and basemap packages using
+   
+   ```
+   conda install matplotlib
+   ```
+
+   ```
+   conda install -c conda-forge basemap
+   ```
+
+* Step 7: Run the script OMI_statitic_ca.py to calculate periodical (pre, peri, and post) means of 2020 and 2015-2019, and their differences. Change the below variables accordingly.
 
 1. period – either pre, peri, or post
 2. infolder – root directory for input files
