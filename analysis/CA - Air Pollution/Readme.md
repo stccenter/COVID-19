@@ -58,15 +58,15 @@ The mitigation policies or lockdown measures imposed by local and national gov-e
       1. Using this [link](https://www.lfd.uci.edu/~gohlke/pythonlibs/), download GDAL‑3.3.3‑cp38‑cp38‑win_amd64.whl, Fiona‑1.8.20‑cp38‑cp38‑win_amd64.whl, and 
          geopandas-0.10.2-py2.py3-none-any.whl files.
    
-   ![Caption: GDAL WHL version](GDAL-WHL.png)
+   ![Caption: GDAL WHL version](Screenshots/GDAL-WHL.png)
 
-   ![Caption: Fiona WHL version](Fiona-WHL.png)
+   ![Caption: Fiona WHL version](Screenshots/Fiona-WHL.png)
 
-   ![Caption: Geopandas WHL version](Geopandas-WHL.png)
+   ![Caption: Geopandas WHL version](Screenshots/Geopandas-WHL.png)
 
    3. In terminal, install the packages using pip. For example to install GDAL
    
-   ![Caption: GDAL WHL version](GDAL-PIP.png)
+   ![Caption: GDAL WHL version](Screenshots/GDAL-PIP.png)
 
 
 * Step 7: Run the script
