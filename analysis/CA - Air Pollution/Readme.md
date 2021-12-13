@@ -5,18 +5,22 @@ The mitigation policies or lockdown measures imposed by local and national gov-e
 **Pre-requisite**
 
 1. Python IDE (Visual Studio Code, Pycharm, or anything of your choice)
-2. Python 2.7 or above
-3. Anaconda 3
+2. Python 3.8.12
+3. For Windows 64 - Anaconda3-2021.05
+4. KNIME
 
 **Steps**
 
 * Step 1: Create a new folder and name it as per your preference. For example, let's say CA_Air_Pollution
 
-* Step 2: Download the project related materials using the link. The downloaded folder has below folders and files:
+* Step 2: Clone this repository. The CA - Air Pollution has below folders and files:
   
-    1. Air Pollutants Data - This folder has satellite NO2 observations data. It has three sub-folders: pre, peri, and post
-    2. Air Quality Analytical Tool - This folder has 
+    1. Air Pollutants Data - The folder has California ground-based air pollution data - CO, O3, NO2, PM10, PM2.5, SO2
+    2. Air Quality Analytical Tool - The folder has OMI_statitic_ca.py file. The script calculates periodical (pre, peri, and post) means of 2020 and 2015-2019, and their       differences
+    3. Air Quality Results - The folder has alifornia_counties_covid_env_data.xlsx file. The files holds daily average concentration for each pollutant. Seven-day moving average and standard error.
+    4. requirements.txt - The text files contains the list of python packages required for the script.
 
+Additionally, download the satellite-based NO2 observations data from this [link](https://drive.google.com/drive/folders/1ZieN-_Z8Mv6ILqjLdhD0frNP8Y1BBOmI?usp=sharing)
 
 * Step 3: Open the command prompt/terminal in your system. Navigate to your project folder CA_Air_Pollution
   
@@ -145,9 +149,6 @@ The mitigation policies or lockdown measures imposed by local and national gov-e
 
     ![Caption: Difference-Output](Screenshots/Difference-Output.jpg)
 
-**Results**
-
-1. california_counties_covid_env_data.xlsx contains daily average concentration for each pollutant. Seven-day moving average and standard error are calculated in using excel.
 
 **Useful links**
 
