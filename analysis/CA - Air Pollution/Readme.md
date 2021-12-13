@@ -9,6 +9,14 @@ The mitigation policies or lockdown measures imposed by local and national gov-e
 3. For Windows 64 - Anaconda3-2021.05
 4. KNIME
 
+**Data Explanation**
+The study was conducted through the comparison among three periods:
+1. before (January 26 – March 18)
+2. during (March 19 – May 8)
+3. after (May 9 – June 14) 
+
+The lockdown of California in 2020 and compared the emission patterns of air pollution with annual means of 2015-2019. California was selected as the study area of this research due to its severe condition of the spread of COVID-19 and high air pollution rates. We col-lected ground-based observations of air pollutants such as NO2, O3, CO, PM2.5, and PM10 obtained from the Environmental Protection Agency (EPA) and satellite NO2 ob-servations acquired from Ozone Monitoring Instrument (OMI) aboard NASA's Earth Observing System's (EOS) Aura satellite.
+
 **Steps**
 
 * Step 1: Create a new folder and name it as per your preference. For example, let's say CA_Air_Pollution
