@@ -10,6 +10,7 @@ The mitigation policies or lockdown measures imposed by local and national gov-e
 4. KNIME
 
 **Data Explanation**
+
 The study was conducted through the comparison among three periods:
 1. before (January 26 – March 18)
 2. during (March 19 – May 8)
@@ -23,20 +24,28 @@ The lockdown of California in 2020 and compared the emission patterns of air pol
 
 * Step 2: Clone this repository. The CA - Air Pollution has below folders and files:
   
-    1. Air Pollutants Data - The folder has California ground-based air pollution data - CO, O3, NO2, PM10, PM2.5, SO2
-    2. Air Quality Analytical Tool - The folder has OMI_statitic_ca.py file. The script calculates periodical (pre, peri, and post) means of 2020 and 2015-2019, and their       differences
-    3. Air Quality Results - The folder has alifornia_counties_covid_env_data.xlsx file. The files holds daily average concentration for each pollutant. Seven-day moving average and standard error.
+    1. Air Pollutants Data folder has California ground-based air pollution data - CO, O3, NO2, PM10, PM2.5, SO2
+    2. Air Quality Analytical Tool folder has OMI_statitic_ca.py file. The script calculates periodical (pre, peri, and post) means of 2020 and 2015-2019, and their       differences
+    3. Air Quality Results folder has alifornia_counties_covid_env_data.xlsx file. The files holds daily average concentration for each pollutant. Seven-day moving average and standard error.
     4. requirements.txt - The text files contains the list of python packages required for the script.
+    5. Shapefile folder has California shapefile
 
-Additionally, download the satellite-based NO2 observations data from this [link](https://drive.google.com/drive/folders/1ZieN-_Z8Mv6ILqjLdhD0frNP8Y1BBOmI?usp=sharing)
+Additionally, download the satellite-based NO2 observations data from this [link](https://drive.google.com/drive/folders/1ZieN-_Z8Mv6ILqjLdhD0frNP8Y1BBOmI?usp=sharing). Download the 2015-2019 and 2020 folders.
 
-* Step 3: Open the command prompt/terminal in your system. Navigate to your project folder CA_Air_Pollution
+* Step 3: Place the below items inside the project folder CA_Air_Pollution
+  i. downloaded 2015-2019 and 2020 folders
+  ii. OMI_statitic_ca.py script 
+  iii. requirements.txt
+  iv. Shapefile folder (the folder includes California.shp, California.prj, California.shx, California.dbf). 
+
+* Step 4: Open the command prompt/terminal in your system. Navigate to your project folder CA_Air_Pollution
+
   
   ```
   cd CA-Air Pollution
   ```
 
-* Step 4: Create a new conda environment.
+* Step 5: Create a new conda environment.
 
     **For Windows and Mac**
 
@@ -46,7 +55,7 @@ Additionally, download the satellite-based NO2 observations data from this [link
 
     ![Caption: Create conda environment](Screenshots/Conda-env-create.jpg)
 
-* Step 5: Activate the conda environment.
+* Step 6: Activate the conda environment.
 
     **For Windows and Mac**
 
@@ -57,7 +66,7 @@ Additionally, download the satellite-based NO2 observations data from this [link
     ![Caption: Create conda environment](Screenshots/Conda-env-activate.jpg)
 
 
-* Step 6: Install packages for the script.
+* Step 7: Install packages for the script.
 
     1. Execute below comment to install required python packages.<br/>
 
@@ -122,7 +131,7 @@ Additionally, download the satellite-based NO2 observations data from this [link
    conda install -c conda-forge basemap-data-hires
    ```
 
-* Step 7: The cript OMI_statitic_ca.py calculates:
+* Step 8: The cript OMI_statitic_ca.py calculates:
     1. periodical (pre, peri, and post) means of 2020 and 2015-2019
     2. anomalies of each period in 2015-2019 and 2020 
     3. differences between periods.
