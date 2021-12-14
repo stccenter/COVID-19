@@ -33,10 +33,11 @@ The lockdown of California in 2020 and compared the emission patterns of air pol
 Additionally, download the satellite-based NO2 observations data from this [link](https://drive.google.com/drive/folders/1ZieN-_Z8Mv6ILqjLdhD0frNP8Y1BBOmI?usp=sharing). Download the 2015-2019 and 2020 folders.
 
 * Step 3: Place the below items inside the project folder CA_Air_Pollution
-  i. downloaded 2015-2019 and 2020 folders
-  ii. OMI_statitic_ca.py script 
-  iii. requirements.txt
-  iv. Shapefile folder (the folder includes California.shp, California.prj, California.shx, California.dbf). 
+
+1. 2015-2019 and 2020 folders
+2. OMI_statitic_ca.py script 
+3. iii. requirements.txt
+4. Shapefile folder (the folder includes California.shp, California.prj, California.shx, California.dbf). 
 
 * Step 4: Open the command prompt/terminal in your system. Navigate to your project folder CA_Air_Pollution
 
@@ -74,7 +75,7 @@ Additionally, download the satellite-based NO2 observations data from this [link
     pip install -r requirements.txt
     ```
 
-   2. Next, install gdal, fiona, and geopandas. To successfully install these packages, first install GDAL, second install fiona, and last install geopandas.
+   1. Next, install gdal, fiona, and geopandas. To successfully install these packages, first install GDAL, second install fiona, and last install geopandas.
    
       1. Using this [link](https://www.lfd.uci.edu/~gohlke/pythonlibs/), download GDAL‑3.3.3‑cp38‑cp38‑win_amd64.whl, Fiona‑1.8.20‑cp38‑cp38‑win_amd64.whl, and 
          geopandas-0.10.2-py2.py3-none-any.whl files.
@@ -92,7 +93,7 @@ Additionally, download the satellite-based NO2 observations data from this [link
    ![Caption: Geopandas WHL version](Screenshots/Geopandas-WHL.png)
 
 
-   3. In terminal, install the packages using pip. For example to install GDAL, type
+   1. In terminal, install the packages using pip. For example to install GDAL, type
    
     ```
     pip install [path_where_you_download_GDAL_WHL_FILE]
@@ -100,7 +101,7 @@ Additionally, download the satellite-based NO2 observations data from this [link
    
    ![Caption: GDAL PIP](Screenshots/GDAL-PIP.jpg)
 
-   4. Similarly, install fiona package.
+   1. Similarly, install fiona package.
    
    ```
    pip install [path_where_you_download_FIONA_WHL_FILE]
@@ -109,7 +110,7 @@ Additionally, download the satellite-based NO2 observations data from this [link
    ![Caption: FIONA PIP](Screenshots/Fiona-PIP.jpg)
 
 
-   5. Finally, install geopandas package.
+   1. Finally, install geopandas package.
 
    ```
    pip install [path_where_you_download_GEOPANDAS_WHL_FILE]
